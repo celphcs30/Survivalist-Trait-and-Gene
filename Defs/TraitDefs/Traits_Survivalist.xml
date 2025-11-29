@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraitDef>
+    <defName>Survivalist</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>survivalist</label>
+        <description>{PAWN_nameDef} is a true survivalist. {PAWN_pronoun} doesn't care about food quality, has no need for outdoors, and recreation needs decrease slower.</description>
+        <disablesNeeds>
+          <li>Outdoors</li>
+        </disablesNeeds>
+        <disallowedThoughtsFromIngestion>
+          <li>
+            <thoughts>
+              <li>AteLavishMeal</li>
+              <li>AteFineMeal</li>
+              <li>AteRawFood</li>
+              <li>AteKibble</li>
+              <li>AteCorpse</li>
+              <li>AteRottenFood</li>
+              <li>AteInsectMeatDirect</li>
+              <li>AteInsectMeatAsIngredient</li>
+              <li>AteHumanlikeMeatDirect</li>
+              <li>AteHumanlikeMeatAsIngredient</li>
+            </thoughts>
+          </li>
+        </disallowedThoughtsFromIngestion>
+        <statFactors>
+          <JoyFallRateFactor>0.5</JoyFallRateFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Undergrounder</li>
+    </conflictingTraits>
+  </TraitDef>
+
+</Defs>
+

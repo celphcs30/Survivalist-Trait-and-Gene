@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef>
+    <defName>Survivalist</defName>
+    <label>survivalist</label>
+    <description>Carriers of this gene are true survivalists. They don't care about food quality, have no need for outdoors, and recreation needs decrease slower.</description>
+    <iconPath>UI/Icons/Genes/Gene_RobustDigestion</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>75</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <disablesNeeds>
+      <li>Outdoors</li>
+    </disablesNeeds>
+    <statFactors>
+      <JoyFallRateFactor>0.5</JoyFallRateFactor>
+    </statFactors>
+    <suppressedTraits>
+      <li>
+        <def>Survivalist</def>
+      </li>
+      <li>
+        <def>Undergrounder</def>
+      </li>
+    </suppressedTraits>
+  </GeneDef>
+
+</Defs>
+

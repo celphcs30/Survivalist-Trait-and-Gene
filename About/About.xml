@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Survivalist Trait and Gene</name>
+  <packageId>celphcs30.SurvivalistTraitandGene</packageId>
+  <author>celphcs30</author>
+  <url>https://github.com/celphcs30/Survivalist-Trait-and-Gene</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter>
+    <li>Ludeon.RimWorld.Biotech</li>
+  </loadAfter>
+  <description>
+    Adds a rare Survivalist trait and gene that makes pawns completely indifferent to food quality and living conditions. Perfect for underground bases, harsh environments, or pawns who just don't care about creature comforts.
+
+    [h1]Features[/h1]
+    [list]
+    [*] Survivalist trait (rare, 0.2 commonality) - makes pawns not care about food quality or living conditions
+    [*] Survivalist gene - same effects, zero complexity and zero metabolic cost
+    [*] SurvivalistFood ideology precept - can be added to any ideology to make all followers indifferent to food quality
+    [*] Disables outdoor need - pawns never get "cooped up" or "cabin fever" debuffs
+    [*] Recreation need decays 50% slower - less time needed for recreation activities
+    [*] No mood effects from any food - indifferent to lavish meals, fine meals, raw food, kibble, paste, rotten food, insect meat, and even cannibalism
+    [*] No mood debuff from eating without a table - true survivalists don't need tables
+    [*] No mood debuff from being soaking wet - rain doesn't bother true survivalists
+    [*] Nullifies ideology precept food thoughts - works with "nutrient paste disgusting", "meat abhorrent", "cannibalism abhorrent", etc.
+    [/list]
+
+    [h1]Effects[/h1]
+    [list]
+    [*] Food thoughts nullified: Ate lavish meal (+12), Ate fine meal (+5), Ate raw food (-7), Ate kibble (-12), Ate corpse (-12), Ate rotten food (-10), Ate insect meat (-6/-3), Raw/cooked cannibalism (-20/-15)
+    [*] Ate without table (-3) - nullified
+    [*] Soaking wet (-3) - nullified (rain doesn't bother survivalists)
+    [*] Outdoor need completely disabled - no need to go outside, no penalties for staying indoors
+    [*] Recreation fall rate: 50% slower (0.5x multiplier)
+    [/list]
+
+    [h1]Ideology Support[/h1]
+    [list]
+    [*] New precept: "Survivalist food: Indifferent" - can be added to any ideology
+    [*] No meme requirements - works with any ideology setup
+    [*] Nullifies all food-related negative thoughts, including those from other precepts
+    [*] Perfect for ideologies that want to be practical about food without requiring specific memes
+    [/list]
+
+    [h1]Compatibility[/h1]
+    [list]
+    [*] Conflicts with Undergrounder trait (mutual exclusion - both disable outdoor need)
+    [*] Core game automatically handles conflicts with CaveDweller (indoor dweller) gene
+    [*] If both Survivalist trait and gene are present, the gene suppresses the trait
+    [*] Works alongside other food precepts (e.g., "nutrient paste disgusting") - our precept nullifies the negative thoughts
+    [*] Safe to add/remove mid-game
+    [*] XML-only implementation - zero performance impact
+    [/list]
+
+    [h1]Perfect For[/h1]
+    [list]
+    [*] Underground bases - no need to worry about outdoor time
+    [*] Harsh environments - pawns don't care about food quality
+    [*] Prisoners - easier to manage with fewer needs
+    [*] Caravans - less recreation time needed
+    [*] Any pawn you want to be self-sufficient and low-maintenance
+    [/list]
+  </description>
+</ModMetaData>
+

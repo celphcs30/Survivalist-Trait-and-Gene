@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Patch ideology precept thoughts to be nullified by SurvivalistFood_Indifferent precept -->
+  <!-- These are thoughts created by ideology precepts (like "nutrient paste disgusting", "meat abhorrent", etc.) -->
+  <!-- Note: AteNutrientPasteMeal is already handled in Thoughts_Survivalist.xml -->
+
+  <!-- Meat Eating Precept Thoughts (for vegetarian ideologies) -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteMeat_Abhorrent']</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteMeat_Horrible']</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteMeat_Disapproved']</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Cannibalism Precept Thoughts -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteHumanMeat_Abhorrent']</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteHumanMeat_Horrible']</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteHumanMeat_Disapproved']</xpath>
+    <value>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+</Patch>
+
+

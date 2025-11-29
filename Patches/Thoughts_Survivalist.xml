@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Patch AteLavishMeal - no existing nullifying nodes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteLavishMeal']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteFineMeal - no existing nullifying nodes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteFineMeal']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteRawFood - has nullifyingGenes, needs nullifyingTraits added to ThoughtDef -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteRawFood']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+  <!-- Add to existing nullifyingGenes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteRawFood']/nullifyingGenes</xpath>
+    <value>
+      <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+    </value>
+  </Operation>
+
+  <!-- Patch AteKibble - no existing nullifying nodes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteKibble']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteCorpse - no existing nullifying nodes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteCorpse']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteRottenFood - no existing nullifying nodes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteRottenFood']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteInsectMeatDirect - no existing nullifying nodes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteInsectMeatDirect']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteInsectMeatAsIngredient - no existing nullifying nodes -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteInsectMeatAsIngredient']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteHumanlikeMeatDirect - has nullifyingTraits, needs nullifyingGenes added to ThoughtDef -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteHumanlikeMeatDirect']/nullifyingTraits</xpath>
+    <value>
+      <li>Survivalist</li>
+    </value>
+  </Operation>
+  <!-- Add nullifyingGenes and nullifyingPrecepts nodes to ThoughtDef -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteHumanlikeMeatDirect']</xpath>
+    <value>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteHumanlikeMeatAsIngredient - has nullifyingTraits, needs nullifyingGenes added to ThoughtDef -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteHumanlikeMeatAsIngredient']/nullifyingTraits</xpath>
+    <value>
+      <li>Survivalist</li>
+    </value>
+  </Operation>
+  <!-- Add nullifyingGenes and nullifyingPrecepts nodes to ThoughtDef -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteHumanlikeMeatAsIngredient']</xpath>
+    <value>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteWithoutTable - has nullifyingTraits, needs nullifyingGenes added to ThoughtDef -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteWithoutTable']/nullifyingTraits</xpath>
+    <value>
+      <li>Survivalist</li>
+    </value>
+  </Operation>
+  <!-- Add nullifyingGenes and nullifyingPrecepts nodes to ThoughtDef -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteWithoutTable']</xpath>
+    <value>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch AteNutrientPasteMeal - has nullifyingTraits, needs nullifyingPrecepts added -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteNutrientPasteMeal']/nullifyingTraits</xpath>
+    <value>
+      <li>Survivalist</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='AteNutrientPasteMeal']</xpath>
+    <value>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+      <nullifyingPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- Patch SoakingWet - has nullifyingPrecepts, needs nullifyingTraits and nullifyingGenes added -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='SoakingWet']</xpath>
+    <value>
+      <nullifyingTraits>
+        <li>Survivalist</li>
+      </nullifyingTraits>
+      <nullifyingGenes>
+        <li MayRequire="celphcs30.SurvivalistTraitandGene">Survivalist</li>
+      </nullifyingGenes>
+    </value>
+  </Operation>
+  <!-- Add our precept to existing nullifyingPrecepts -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='SoakingWet']/nullifyingPrecepts</xpath>
+    <value>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SurvivalistFood_Indifferent</li>
+    </value>
+  </Operation>
+
+</Patch>

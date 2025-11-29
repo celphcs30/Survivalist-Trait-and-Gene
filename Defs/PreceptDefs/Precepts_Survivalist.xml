@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Issue -->
+  
+  <IssueDef>
+    <defName>SurvivalistFood</defName>
+    <label>survivalist food</label>
+    <iconPath>UI/Issues/EatingNutrientPaste</iconPath>
+  </IssueDef>
+
+  <!-- Precept -->
+  
+  <PreceptDef>
+    <defName>SurvivalistFood_Indifferent</defName>
+    <issue>SurvivalistFood</issue>
+    <label>indifferent</label>
+    <description>We are true survivalists. Food is fuel, nothing more. We don't care about quality, taste, or source - paste, raw meat, insect flesh, even human meat. As long as it sustains us, it's acceptable.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <defaultSelectionWeight>0</defaultSelectionWeight>
+    <!-- No meme requirements - can be added to any ideology -->
+  </PreceptDef>
+
+</Defs>
+
