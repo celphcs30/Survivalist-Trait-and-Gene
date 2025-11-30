@@ -44,11 +44,19 @@
     [*] Perfect for ideologies that want to be practical about food without requiring specific memes
     [/list]
 
+    [h1]How It Works[/h1]
+    [list]
+    [*] The Survivalist trait contains all the effects (food indifference, outdoor need disabled, recreation decay)
+    [*] The Survivalist gene automatically grants the Survivalist trait to pawns who have it
+    [*] This ensures gene-only pawns get all the same benefits as trait-only pawns, including proper food selection
+    [*] If both trait and gene are present, both are active (same effects, no stacking issues)
+    [/list]
+
     [h1]Compatibility[/h1]
     [list]
     [*] Conflicts with Undergrounder trait (mutual exclusion - both disable outdoor need)
     [*] Core game automatically handles conflicts with CaveDweller (indoor dweller) gene
-    [*] If both Survivalist trait and gene are present, the gene suppresses the trait
+    [*] Gene suppresses Undergrounder trait if present
     [*] Works alongside other food precepts (e.g., "nutrient paste disgusting") - our precept nullifies the negative thoughts
     [*] Safe to add/remove mid-game
     [*] XML-only implementation - zero performance impact

@@ -11,16 +11,13 @@
     <biostatCpx>0</biostatCpx>
     <biostatMet>0</biostatMet>
     <canGenerateInGeneSet>true</canGenerateInGeneSet>
-    <disablesNeeds>
-      <li>Outdoors</li>
-    </disablesNeeds>
-    <statFactors>
-      <JoyFallRateFactor>0.5</JoyFallRateFactor>
-    </statFactors>
-    <suppressedTraits>
+    <!-- Gene forces the Survivalist trait, which provides all the effects (disablesNeeds, disallowedThoughtsFromIngestion, JoyFallRateFactor) -->
+    <forcedTraits>
       <li>
         <def>Survivalist</def>
       </li>
+    </forcedTraits>
+    <suppressedTraits>
       <li>
         <def>Undergrounder</def>
       </li>

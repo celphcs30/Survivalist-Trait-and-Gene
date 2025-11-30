@@ -9,7 +9,7 @@ This mod adds three ways to make pawns true survivalists:
 - **Survivalist Gene** - can be added via gene editing, zero complexity and metabolic cost
 - **SurvivalistFood Ideology Precept** - can be added to any ideology to make all followers indifferent to food quality
 
-Both trait and gene provide identical effects, and if both are present, the gene suppresses the trait. The ideology precept works alongside them, nullifying food-related thoughts for all ideology followers.
+The Survivalist gene automatically grants the Survivalist trait to pawns who have it, ensuring identical effects including proper food selection. If both trait and gene are present, both are active (same effects, no stacking issues). The ideology precept works alongside them, nullifying food-related thoughts for all ideology followers.
 
 ## Features
 
@@ -53,10 +53,9 @@ Pawns with Survivalist trait/gene are completely indifferent to food quality:
 - **Metabolic Effect**: 0 (zero)
 - **Display Category**: Miscellaneous
 - **Effects**:
-  - Disables `Outdoors` need
-  - Recreation fall rate: 0.5x (50% slower)
-  - Suppresses Survivalist trait if both present
+  - Automatically grants the Survivalist trait (via `forcedTraits`)
   - Suppresses Undergrounder trait if present
+  - All other effects come from the trait (ensures food selection works properly)
 
 ### Ideology Precept
 - **defName**: `SurvivalistFood_Indifferent`
@@ -94,10 +93,12 @@ The mod also patches ideology precept thoughts to be nullified by the Survivalis
 - **Undergrounder trait**: Mutual exclusion (both disable outdoor need, so they conflict)
 - **CaveDweller gene** (indoor dweller): Core game automatically handles conflicts when both genes disable the same need
 
-### Suppression Logic
-- If both Survivalist trait and gene are present → gene suppresses trait
-- If Undergrounder trait is present with Survivalist gene → gene suppresses Undergrounder trait
-- Core game handles CaveDweller gene conflicts automatically
+### How It Works
+- **Gene grants trait**: The Survivalist gene uses `forcedTraits` to automatically grant the Survivalist trait
+- **Single source of truth**: All effects (food thoughts, outdoor need, recreation) are defined in the trait
+- **Both active**: If both trait and gene are present, both are active (same effects, no stacking issues)
+- **Undergrounder suppression**: If Undergrounder trait is present with Survivalist gene → gene suppresses Undergrounder trait
+- **CaveDweller conflicts**: Core game handles CaveDweller gene conflicts automatically
 
 ### Safe to Use
 - ✅ Safe to add/remove mid-game

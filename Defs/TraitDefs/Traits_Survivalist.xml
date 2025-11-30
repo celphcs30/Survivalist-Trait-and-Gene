@@ -14,8 +14,7 @@
         <disallowedThoughtsFromIngestion>
           <li>
             <thoughts>
-              <li>AteLavishMeal</li>
-              <li>AteFineMeal</li>
+              <!-- Only block negative thoughts - positive thoughts (AteLavishMeal, AteFineMeal) are allowed to be created for food selection, but nullified via patches -->
               <li>AteRawFood</li>
               <li>AteKibble</li>
               <li>AteCorpse</li>
